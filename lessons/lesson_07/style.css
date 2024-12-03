@@ -1,0 +1,42 @@
+.grid-container{
+    display: grid;                      /* sdelali grid container */
+    gap: 5px;                       /* rasojanie mezdu jacheikami */
+    grid-template-columns: 1fr 2fr 1fr; /* 1fr reven odnomu kusochku*/
+    grid-auto-rows: 60px;                   /* zadaem visotu kazhdogo rjada */
+
+}
+.grid-item{
+    display: flex;
+    justify-content: center; /* zifri po centru gorezontali*/
+    align-items: center;
+    background-color: beige;
+}
+
+
+.grid-container-adaptive{
+    display: grid;
+    gap: 5px 15px;
+    grid-auto-rows: 80px;
+    /*grid-template-columns: repeat(4, 1fr);*/ /* v funkziju repeat() peredaem perwim argumentom kolichestvo kolonok a vtorim zadat ix razmer */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.grid-item-adaptive{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: aliceblue;*/
+    background-image: url("https://assets.science.nasa.gov/dynamicimage/assets/science/astro/universe/internal_resources/402/Carina_Nebula-1.jpeg?w=4096&format=jpeg&fit=clip&crop=faces%2Cfocalpoint");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-container{
+    color: white;
+    background-image: url("https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg");
+ background-size: cover;
+ background-position: center;
+
+}

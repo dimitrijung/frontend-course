@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Dancing+Script:wght@400..700&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Dancing Script", sans-serif;      /*Устанавливаем шрифт для тела документа, по умолчанию используется Dancing Script*/
+    color: rgb(107, 47, 47);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);  /*Добавляем тень текста с легким размазыванием (2px смещение по x и y, 6px размытие)*/
+    margin: 0;                                      /*Убираем внешние отступы для всего body*/
+    display: flex;                                  /* Делаем контейнер body flex-контейнером*/
+    flex-direction: column;                         /* элементы располагаются вертикально*/
+    min-height: 100vh;                              /* Устанавливаем минимальную высоту контейнера равной высоте экрана браузера*/   
+    background-color: rgb(237, 237, 237);         /* Устанавливаем светло-серый цвет фона body*/
+}
+header{
+    display: flex;                                   /* Делаем header flex-контейнером*/
+    justify-content: center;                         /* элементы header центрируются по горизонтали*/
+    align-items: center;                             /* элементы header будут выровнены по центру вертикально*/
+    position: sticky;                                /* Закрепляем header в верхней части окна при прокрутке */
+    top: 0px;                                        /* ne sabiwaem dobawit zna4enie v pixel dlja odnoj iz koordinat chtob sticky srabotal (top/ right/ left / bottom) */
+    height: 80px;                                    /* Фиксируем высоту header в 80 пикселей*/
+    background-color: rgb(248, 236, 219);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Добавляем тень header снизу для визуального выделения*/
+}
+
+main{
+    margin: 50px 0 50px 0;              /* Устанавливаем внешние отступы сверху и снизу по 50px, слева и справа — 0 */
+    flex: 1;                            /* nastroj dlja flex elementa chtobi on rastjanulsja po razmeru kontejnera roditelja */
+}
+
+footer{
+    display: flex;                       /* Делаем footer flex-контейнером, элементы центрируются по горизонтали и вертикали */
+    justify-content: center;
+    align-items: center;
+    height: 50px;                        /* Устанавливаем фиксированную высоту в 50 пикселей */
+    background-color: lightgrey;       /* Задаем светло-серый цвет фона */
+}
+
+p{
+    margin: 2px;                         /* Минимизируем внешние отступы до 2px */
+    line-height: 1.5;                    /* Устанавливаем межстрочный интервал для читаемости текста */
+}
+
+.grid-container{
+display: grid;                                                /* Делаем контейнер сеточным */
+gap: 10px;                                                    /* Устанавливаем расстояние между ячейками сетки в 10px */
+grid-auto-rows: 480px;                                        /* Фиксируем высоту строк сетки в 480px */
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Автоматически подбираем количество колонок. Ширина каждой колонки варьируется от 300px до максимально доступного пространства */
+}
+.grid-container section{
+    display: flex;                                  /* Делаем секции flex-контейнерами, элементы располагаются вертикально */
+    flex-direction: column;                         /* raspologaem elmenti s verhu v niz, i nash zagolovok nahoditsja nad */
+    justify-content: flex-start;                    /* Выровняем элементы по началу (сверху) и по центру горизонтали */
+    align-items: center;
+    padding: 0 20px 0 20px;                         /* Добавляем внутренние отступы по бокам в 20px */
+    border-radius: 5px;                             /* Скругляем углы секции */
+    background-color: rgb(248, 236, 219);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.grid-container img{
+    width: 100%;                                    /* Растягиваем изображение по ширине и высоте контейнера. */
+    height: 100%;
+    border-radius: 10px;                            /* Скругляем углы изображения */
+    object-fit: cover;                              /* Изображение масштабируется и обрезается для полного заполнения контейнера без искажений */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.grid-container img:hover{
+    transform: scale(1.02);                         /* При наведении масштабируем изображение на 2% с плавным переходом за 0.3 секунды */
+    transition: transform 0.3s ease;
+}
