@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+body{
+    font-family: "Covered By Your Grace", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(231, 225, 225); 
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto; /* 0- po verticali, auto- po gorizontali */
+    max-width: 400px;
+    padding: 20px; /* Otstupi so vsech storon */
+    border: 1px solid #cba;
+    border-radius: 10px;
+    /*
+        1.Po osi X (poloshitelnoe - vpravo, otrizatelnoe - vlevo)
+        2.Po osi Y (poloshitelnoe - vniz, otrizatelnoe - vverh)
+        3.Razmitie teni (kak bistro ten slivaetsa s fonom)
+        4.Zwet teni.
+    */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    width: 100%;
+    border: 1px solid #302f2f;
+    border-radius: 5px;
+    padding: 5px 0 5px 5px; /* Nachinaja s verhu i po chasovoj strelke */ 
+}
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding:10px 20px 10px 20px;
+    margin: 10px 5px;
+}
+.reset{
+    background-color: rgb(237, 10, 55);
+}
+.submit{
+    background-color: rgb(93, 220, 20);
+}

@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./dog.jpg'); /* Путь к вашей картинке */
+    background-size: cover; /* Растянуть картинку по всей области */
+    background-position: center; /* Центрировать изображение */
+    background-repeat: no-repeat; /* Отключить повтор */
+    font-family: Arial, sans-serif;
+    display: flex; /* Используем Flexbox для управления расположением */
+    justify-content: flex-end; /* Перемещаем элементы вправо */
+    align-items: center; /* Центрируем элементы по вертикали */
+    height: 100vh; /* Высота экрана */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-right: 50px; /* Отступ от правого края */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h1{
+text-align: center;
+margin-bottom: 20px;
+}
+form{
+    width: 100%;
+    margin: 0 auto; /* 0- po verticali, auto- po gorizontali */
+    max-width: 400px;
+    padding: 20px; /* Otstupi so vsech storon */
+    border: 1px solid #cba;
+    border-radius: 10px;
+    /*
+        1.Po osi X (poloshitelnoe - vpravo, otrizatelnoe - vlevo)
+        2.Po osi Y (poloshitelnoe - vniz, otrizatelnoe - vverh)
+        3.Razmitie teni (kak bistro ten slivaetsa s fonom)
+        4.Zwet teni.
+    */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}

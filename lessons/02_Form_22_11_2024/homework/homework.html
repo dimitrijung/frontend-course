@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Shelter</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./style_homework.css">
+    <h1>Animal Shelter</h1>
+    <form>
+        <label for="nameInput"><strong>Do you like animals?</label></strong><br><br> 
+    <div>
+        <input id="yes" type="radio" name="question">
+         <label for="yes">Yes</label>
+    </div>
+    <br>
+        <input id="yes1" type="radio" name="question">  
+         <label for="yes1">Yes</label>
+    <div>
+    <br>
+    <br>
+        <label for="nameInput"><strong>Enter your name:</label></strong><br><br>
+        <input  id="nameInput" type="text"placeholder="Name..." required />
+    </div>
+    <div>
+    <br>
+            <label for="emailInput"><strong>Enter your email:</label></strong><br><br>
+            <input  id="emailInput" type="text"placeholder="Email..." required />
+        </div>
+        <div>
+        <br>
+                <label for="numberInput"><strong>Enter your phone number:</label></strong><br><br>
+                <input  id="numberInput" type="text"placeholder="Phone number..." required />
+            </div>
+            <div>
+                <br>
+                <br>
+                <label for="animals"><strong>What kind of animal would you like to adopt?</label></strong>
+                <br>
+                <br>
+                <select id="animals"required>
+                    <option value="">Please select... </option>
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="both">Both animals</option>
+                </select>
+              </div>
+              <br>
+              <button type="submit" style="border-radius: 5px;">Submit</button>
+    </form>
+</body>
+</html>
