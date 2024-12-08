@@ -1,10 +1,10 @@
 const magicBtn = document.querySelector("#magic-btn")  // находим первую кнопку через функцию "querySelector" и сохраняем ее в переменную "const magicBtn"
 
 magicBtn.addEventListener("click", ()=>{               // Добавляем обработчик события для кнопки 1. В скобках говорим (после "click" выполни действия)
-    const magicBtn2 = document.createElement("button") //Создаем кнопку (вторую) и сохраняем ее в переменную "const magicBtn2"
-    magicBtn2.textContent = "Я изменю тебя"            //Добавляем переменной (кнопка 2) имя "Я изменю тебя"
-    magicBtn2.id = "magic-btn-2"                       //Добавляем переменной id
-    document.body.append (magicBtn2)                   //Кнопку нужно сделать видимой, с помощью document.body.append добавляем на страницу в браузер
+    const magicBtn2 = document.createElement("button") // Создаем кнопку (вторую) и сохраняем ее в переменную "const magicBtn2"
+    magicBtn2.textContent = "Я изменю тебя"            // Добавляем переменной (кнопка 2) имя "Я изменю тебя"
+    magicBtn2.id = "magic-btn-2"                       // Добавляем переменной id
+    document.body.append (magicBtn2)                   // Кнопку нужно сделать видимой, с помощью document.body.append добавляем на страницу в браузер
 
 magicBtn2.addEventListener("click", ()=>{       // Добавляем обработчик события для кнопки 2. В скобках говорим (после "click" выполни действия)
     magicBtn.style.backgroundColor = "#9c4a1a"  // Если был клик мишки на "magicBtn2" (кнопка 2) то поменяй backgroundColor для magicBtn (кнопка 1)

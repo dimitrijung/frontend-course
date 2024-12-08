@@ -19,8 +19,18 @@ a::before{          /* kazhdoj ssilke pri sosdanie budet dobavljatsa text ili ka
     text-decoration: underline;
     color: rgb(255, 186, 47);
 }*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    padding: 20px;
+}
 
 .lesson-container{
+    display: flex;
+    flex-direction: column;
+}
+.homework-container{
     display: flex;
     flex-direction: column;
 }
