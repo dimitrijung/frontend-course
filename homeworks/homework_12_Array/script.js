@@ -9,7 +9,6 @@
 let names = ["Мария", "Алексей", "Елена", "Дмитрий"]
 //console.log(names);
 
-
 let ages = [22, 31, 45, 53]
 //console.log(ages);
 
@@ -37,6 +36,13 @@ for (let i = 0; i < names.length; i++) {    // цикл проходит по в
     }
 console.log(people);
 
+
+// второй вариант без функции "function ageEnding(ages)" правильного окончания "лет/годов" и без дополнительных переменных let name = names[i]/ let age = ages[i]
+//let people = []
+//for (let i = 0; i < names.length; i++) {
+//    people.push (`${names[i]} ${ages[i]} лет/годов`) //конкатинация  
+//}
+//console.log(people);
 
 //-------------------------- ЗАДАНИЕ 2 --------------------------
 
