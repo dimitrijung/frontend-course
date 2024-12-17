@@ -1,0 +1,22 @@
+.characters-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+}
+.character-card{
+    border: 1px solid black;
+}
+.character-card > img {
+    width: 100%;
+}
+.character-card > h2 {
+display: flex;
+justify-content: center;
+}
+
+.character-card > p {
+    display: flex;
+    justify-content: center;
+}
+
+
