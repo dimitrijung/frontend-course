@@ -8,7 +8,7 @@ async function fetchProduct() {
         card.className = "product-card"
 //--------- Item Img ---------   
         const img = document.createElement("img")
-        img.src = product.images 
+        img.src = product.images[0] 
         img.alt = product.title
 //--------- Add Img-Wrapper --------- 
         const wrapper = document.createElement("div")
